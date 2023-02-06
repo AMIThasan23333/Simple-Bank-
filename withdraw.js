@@ -22,6 +22,20 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
 
 
 
+      // balance 
 
+      const  BalanceTotal = document.getElementById('balance-total')
+
+      const BalanceTotall =BalanceTotal.innerText
+ 
+      const BalanceTotalNumner = parseFloat(BalanceTotall);
+
+
+         const  RemBalance  = BalanceTotalNumner -  withdrawFieldNumber;
+
+          
+         BalanceTotal.innerText = RemBalance;
 
 })
+
+

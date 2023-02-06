@@ -22,11 +22,21 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
    const TotalMoney  =  depositAmountNumber +   depositTotalNumber;
 
    depositElement.innerText = TotalMoney;
-   
+
  
   
+     const  BalanceTotal = document.getElementById('balance-total')
+
+      const BalanceTotall =BalanceTotal.innerText
+ 
+      const BalanceTotalNumner = parseFloat(BalanceTotall);
 
 
+         const  TotalBalance  = BalanceTotalNumner + depositAmountNumber;
 
+
+         BalanceTotal.innerText = TotalBalance;
+
+         
 
 })
