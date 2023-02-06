@@ -4,8 +4,29 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
 const depositField =  document.getElementById('deposit filed')
 
-const depositAmount = depositField.value;
+const newdepositAmountString =  depositField.value;
 
-console.log(depositAmount);
+const newdepositAmount = parseFloat(newdepositAmountString)
 
+ const depositTotalElement = document.getElementById('deposit-total');
+
+ const previousdepositTotalString = depositTotalElement.innerText;
+
+
+ const previousdepositTotal = parseFloat(previousdepositTotalString);
+
+ 
+
+   const currentDepositTotal = previousdepositTotal + newdepositAmount;
+
+   
+   depositTotalElement.innerText = currentDepositTotal;
+
+
+
+   depositField.value = '';
+
+
+   
 })
+
