@@ -31,12 +31,10 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
  
       const BalanceTotalNumner = parseFloat(BalanceTotall);
 
-
          const  TotalBalance  = BalanceTotalNumner + depositAmountNumber;
-
-
          BalanceTotal.innerText = TotalBalance;
-
-         
-
 })
+
+
+
+
